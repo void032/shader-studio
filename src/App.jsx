@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useCallback, useState } from 'react';
 import * as THREE from 'three';
 import './styles/globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // Context
 import { StudioProvider, useStudio, TARGET_TYPES, PRIMITIVE_SHAPES, getPresetById } from './context/StudioContext';
@@ -539,6 +540,7 @@ function App() {
       <WelcomeModal/>
       <AppContent />
     </StudioProvider>
+    <SpeedInsights />
     </>
   );
 }
