@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useCallback, useState } from 'react';
 import * as THREE from 'three';
 import './styles/globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
 
 // Context
@@ -540,6 +541,7 @@ function App() {
       <WelcomeModal/>
       <AppContent />
     </StudioProvider>
+    <SpeedInsights />
     <Analytics />
     </>
   );
