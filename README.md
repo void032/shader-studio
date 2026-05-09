@@ -80,7 +80,7 @@ Perlin noise      — Procedural terrain generation
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/shader-studio.git
+git clone https://github.com/void032/shader-studio.git
 cd shader-studio
 
 # Install
