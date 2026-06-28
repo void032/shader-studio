@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Universal Shader Studio — Browser-based GLSL Shader Editor</title>
-  <meta name="description" content="Write and preview GLSL shaders live in your browser. Real-time vertex + fragment editor with Three.js. Export as ShaderMaterial, R3F, raw GLSL, or vanilla WebGL." />
+  <meta name="description"
+    content="Write and preview GLSL shaders live in your browser. Real-time vertex + fragment editor with Three.js. Export as ShaderMaterial, R3F, raw GLSL, or vanilla WebGL." />
 
   <meta property="og:title" content="Universal Shader Studio" />
-  <meta property="og:description" content="Browser-based GLSL shader editor. Write shaders live on terrain, primitives, or your own GLB models." />
+  <meta property="og:description"
+    content="Browser-based GLSL shader editor. Write shaders live on terrain, primitives, or your own GLB models." />
   <meta property="og:url" content="https://shader-studio-teal.vercel.app/" />
   <meta property="og:image" content="https://shader-studio-teal.vercel.app/preview.png" />
   <meta property="og:type" content="website" />
@@ -18,18 +21,20 @@
   <meta name="twitter:description" content="Write and preview GLSL shaders live in the browser." />
   <meta name="twitter:image" content="https://shader-studio-teal.vercel.app/preview.png" />
 </head>
+
 <body>
   <!-- Static content for crawlers — hidden visually but indexed by Google -->
   <noscript>
     <h1>Universal Shader Studio</h1>
-    <p>A browser-based GLSL shader editor built with React and Three.js. 
-    Write vertex and fragment shaders live, preview on terrain or 3D models, 
-    and export as Three.js ShaderMaterial, R3F component, raw GLSL, or vanilla WebGL.</p>
-    <p>Features: live GLSL editor, procedural terrain, GLB model upload, 
-    shader presets, multi-format export.</p>
+    <p>A browser-based GLSL shader editor built with React and Three.js.
+      Write vertex and fragment shaders live, preview on terrain or 3D models,
+      and export as Three.js ShaderMaterial, R3F component, raw GLSL, or vanilla WebGL.</p>
+    <p>Features: live GLSL editor, procedural terrain, GLB model upload,
+      shader presets, multi-format export.</p>
   </noscript>
 
   <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>
