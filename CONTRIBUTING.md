@@ -25,7 +25,7 @@ Thanks for taking the time to contribute. This doc covers everything you need �
 
 ```bash
 # 1. Fork the repo, then clone your fork
-git clone https://github.com/YOUR_USERNAME/shader-studio.git
+git clone https://github.com/void032/shader-studio.git
 cd shader-studio
 
 # 2. Install dependencies
@@ -39,6 +39,7 @@ npm run dev
 ```
 
 **Build for production:**
+
 ```bash
 npm run build
 ```
@@ -108,25 +109,26 @@ git checkout -b feature/your-feature-name
 git checkout -b fix/what-youre-fixing
 ```
 
-2. **Make your changes** — keep commits focused and descriptive
+1. **Make your changes** — keep commits focused and descriptive
 
 ```bash
 git commit -m "feat: add auto-compile toggle to shader editor"
 git commit -m "fix: correct terrain height scaling on resolution change"
 ```
 
-3. **Test before pushing** — make sure the build passes
+1. **Test before pushing** — make sure the build passes
 
 ```bash
 npm run build
 ```
 
-4. **Open a PR** against `main` with:
+1. **Open a PR** against `main` with:
    - A clear title
    - What changed and why
    - Screenshots or a short clip if it's a visual change
 
 **PR checklist:**
+
 - [ ] Tested in Chrome (primary target) and Firefox
 - [ ] No console errors introduced
 - [ ] `npm run build` passes without warnings
@@ -139,17 +141,20 @@ npm run build
 No strict linter config — just follow the patterns already in the codebase.
 
 **General:**
+
 - Functional components + hooks — no class components
 - Keep hooks single-responsibility (`useThreeScene` does scene setup, not shader compilation)
 - State lives in `StudioContext` unless it's purely local UI state
 - Name things clearly — no abbreviations that need decoding
 
 **GLSL / Three.js:**
+
 - New uniforms injected into shaders go through the existing uniform pipeline in `useShaderCompiler`
 - Shader presets live in `src/lib/shaderPresets` — add new ones there, not inline
 - Three.js object cleanup (`.dispose()`) is required — memory leaks in WebGL are real
 
 **Styling:**
+
 - Tailwind utility classes only — no custom CSS unless absolutely necessary
 - shadcn/ui for UI primitives — don't reinvent buttons, dialogs, sliders
 - Dark theme is the only theme — don't add light mode surface colors
