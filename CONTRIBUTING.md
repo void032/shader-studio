@@ -25,7 +25,7 @@ Thanks for taking the time to contribute. This doc covers everything you need â€
 
 ```bash
 # 1. Fork the repo, then clone your fork
-git clone https://github.com/void032/shader-studio.git
+git clone https://github.com/YOUR_USERNAME/shader-studio.git
 cd shader-studio
 
 # 2. Install dependencies
