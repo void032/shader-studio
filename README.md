@@ -1,3 +1,4 @@
+Built by [Void (Vineet Kumar)](https://github.com/void032)
 # ⚡ Universal Shader Studio
 
 <div align="center">

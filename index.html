@@ -9,7 +9,6 @@
   <title>Universal Shader Studio — Browser-based GLSL Shader Editor</title>
   <meta name="description"
     content="Write and preview GLSL shaders live in your browser. Real-time vertex + fragment editor with Three.js. Export as ShaderMaterial, R3F, raw GLSL, or vanilla WebGL." />
-
   <meta property="og:title" content="Universal Shader Studio" />
   <meta property="og:description"
     content="Browser-based GLSL shader editor. Write shaders live on terrain, primitives, or your own GLB models." />
@@ -17,6 +16,7 @@
   <meta property="og:image" content="https://shader-studio-teal.vercel.app/preview.png" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://shader-studio-teal.vercel.app/" />
+  <meta name="author" content="Void (Vineet Kumar)" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Universal Shader Studio" />
@@ -37,6 +37,22 @@
 
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Universal Shader Studio",
+  "url": "https://shader-studio-teal.vercel.app/",
+  "description": "Browser-based GLSL shader editor built with React and Three.js.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Browser",
+  "author": {
+    "@type": "Person",
+    "name": "Void (Vineet Kumar)",
+    "url": "https://github.com/void032"
+  }
+}
+</script>
 </body>
 
 </html>
