@@ -1173,7 +1173,8 @@ void main() {
     category: 'fx',
     description: 'Two-pass style ink outline using normal-bias shell expansion. u_color1 is the line color, u_warp controls thickness.',
     vert: `varying vec3 vNormal;
-varying vec3 vColor;
+    varying vec3 vColor;
+    uniform float u_warp;
  
 void main() {
   vNormal = normalMatrix * normal;

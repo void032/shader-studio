@@ -19,9 +19,9 @@ export function useCodeExport() {
       u_steps: uniforms.u_steps?.value || 4.0,
       u_threshold: uniforms.u_threshold?.value || 0.5,
       u_freq: uniforms.u_freq?.value || 3.0,
-      u_color1: '#' + uniforms.u_color1?.value.getHexString() || '4fffb0',
-      u_color2: '#' + uniforms.u_color2?.value.getHexString() || '0a0020',
-      u_color3: '#' + uniforms.u_color3?.value.getHexString() || 'ff6b6b'
+      u_color1: '#' + (uniforms.u_color1?.value?.getHexString() || '4fffb0'),
+      u_color2: '#' + (uniforms.u_color2?.value?.getHexString() || '0a0020'),
+      u_color3: '#' + (uniforms.u_color3?.value?.getHexString() || 'ff6b6b')
     };
     
     switch (format) {
@@ -58,6 +58,7 @@ export function useCodeExport() {
         downloadFile(files.vertex, 'vertex.glsl', 'text/plain');
         setTimeout(() => downloadFile(files.fragment, 'fragment.glsl', 'text/plain'), 100);
         setTimeout(() => downloadFile(files.uniforms, 'uniforms.json', 'application/json'), 200);
+        setTimeout(() => downloadFile(files.readme, 'README.md', 'text/markdown'), 300);
         break;
       }
       case 'vanilla': {
