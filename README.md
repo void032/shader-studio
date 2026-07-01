@@ -7,8 +7,8 @@ Built by [Void (Vineet Kumar)](https://github.com/void032)
 Write shaders. See them live. Export anywhere.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_App-22c55e?style=for-the-badge&logo=vercel&logoColor=white)](https://shader-studio-teal.vercel.app)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
-[![Three.js](https://img.shields.io/badge/Three.js-r168-white?style=for-the-badge&logo=three.js&logoColor=black)](https://threejs.org)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Three.js](https://img.shields.io/badge/Three.js-r128-white?style=for-the-badge&logo=three.js&logoColor=black)](https://threejs.org)
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
 
 ![Universal Shader Studio Preview](./preview.png)
@@ -65,8 +65,8 @@ Go to the Export tab → choose your format → Copy or Download.
 ## Tech Stack
 
 ```
-React 18          — UI framework
-Three.js r168     — 3D rendering
+React 19          — UI framework
+Three.js r128     — 3D rendering
 Vite 7            — Build tool
 Tailwind CSS v3   — Styling
 shadcn/ui         — UI components

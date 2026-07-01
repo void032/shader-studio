@@ -32,7 +32,7 @@ export function FileDropZone({
       const file = files[0];
       const ext = accept.replace('.', '');
       if (!file.name.toLowerCase().endsWith(ext)) return;
-      if (file.size > 25 * 1024 * 1024) return; // 100MB limit
+      if (file.size > 25 * 1024 * 1024) return; // 25MB limit
       onFileSelect(file);
     }
   };
